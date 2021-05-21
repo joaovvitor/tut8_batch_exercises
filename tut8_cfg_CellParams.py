@@ -20,8 +20,12 @@ cfg.saveDataInclude = ['simData', 'simConfig', 'netParams', 'net']
 cfg.synMechTau2 = 5
 cfg.connWeight = 0.01
 
-cfg.gkBar = 0.036
-cfg.eLeak = -70
+cfg.dimension   = 18.8
+cfg.Ra          = 123.0
+cfg.gnaBar      = 0.12
+cfg.gkBar       = 0.036
+cfg.gL          = 0.003
+cfg.eLeak       = -70
 
 #------------------------------------------------------------------------------
 # Current inputs 

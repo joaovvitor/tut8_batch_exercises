@@ -67,7 +67,7 @@ if cfg.addIClamp:
         # add stim source
         # netParams.stimSourceParams[key] = {'type': 'IClamp', 'delay': start, 'dur': dur, 'amp': amp}
         netParams.stimSourceParams[key] = { 'type': 'IClamp', 
-                                            'delay': start, 
+                                            'delay': cfg.startStimTime if cfg.startStimTime is not None else start, 
                                             'dur': cfg.stimDur if cfg.stimDur is not None else dur, 
                                             'amp': cfg.clampAmplitude if cfg.clampAmplitude is not None else amp}
         

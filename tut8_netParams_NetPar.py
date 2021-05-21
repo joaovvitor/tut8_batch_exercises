@@ -33,8 +33,8 @@ netParams.connParams['S->M'] = {    #  S -> M label
     'postConds': {'pop': 'M'},      # conditions of postsyn cells
     'probability': cfg.conProb,             # probability of connection
     'weight': cfg.connWeight,       # synaptic weight
-    'delay': 5,                     # transmission delay (ms)
-    'synMech': 'exc'}               # synaptic mechanism
+    'delay': cfg.connDelay,                     # transmission delay (ms)
+    'synMech': cfg.synMech}               # synaptic mechanism
 
 #------------------------------------------------------------------------------
 # Synaptic mechanism parameters

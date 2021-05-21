@@ -27,9 +27,9 @@ cfg.addIClamp=True
 if cfg.addIClamp:
     cfg.startStimTime = 500
     cfg.clampAmplitude=0.2
-    cfg.stimDur=500
+    cfg.stimDur=100
     
-    cfg.IClamp0 = { 'pop': 'S', 'sec': 'soma', 'loc': 0.5, 'start': 200, 'dur': 200, 'amp': cfg.clampAmplitude}
+    cfg.IClamp0 = { 'pop': 'S', 'sec': 'soma', 'loc': 0.5, 'start': cfg.startStimTime, 'dur': cfg.stimDur, 'amp': cfg.clampAmplitude}
 
 cfg.addPreIClamp = False
 if cfg.addPreIClamp:

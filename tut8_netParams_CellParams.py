@@ -11,8 +11,8 @@ netParams = specs.NetParams()  # object of class NetParams to store the network 
 ## Cell parameters/rules
 PYRcell = {'secs': {}}
 PYRcell['secs']['soma'] = {'geom': {}, 'mechs': {}}  # soma params dict
-PYRcell['secs']['soma']['geom'] = {'diam': 18.8, 'L': 18.8, 'Ra': 123.0}  # soma geometry
-PYRcell['secs']['soma']['mechs']['hh'] = {'gnabar': 0.12, 'gkbar': cfg.gkBar, 'gl': 0.003, 'el': cfg.eLeak}  # soma hh mechanism
+PYRcell['secs']['soma']['geom'] = {'diam': cfg.dimension, 'L': cfg.dimension, 'Ra': cfg.Ra}  # soma geometry
+PYRcell['secs']['soma']['mechs']['hh'] = {'gnabar': cfg.gnaBar, 'gkbar': cfg.gkBar, 'gl': cfg.gL, 'el': cfg.eLeak}  # soma hh mechanism
 netParams.cellParams['PYR'] = PYRcell
 
 ## Population parameters

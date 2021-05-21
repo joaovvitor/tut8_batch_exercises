@@ -22,6 +22,8 @@ cfg.synMechTau2 = 5
 cfg.connWeight = 0.01
 
 cfg.conProb=0.5
+cfg.connDelay=5
+cfg.synMech='exc'
 
 #------------------------------------------------------------------------------
 # Targeted NetStim inputs 
